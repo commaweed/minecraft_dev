@@ -17,69 +17,69 @@ import net.minecraft.world.World;
 
 public class TravisBlock extends Block {
 
-	public TravisBlock() {
-		super(Material.rock);
-		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setHardness(3.0F).setResistance(5.0F).setStepSound(soundTypeStone).setUnlocalizedName("travisDiamond");
-		this.setHarvestLevel("pickaxe", 1);
-	}
+    public TravisBlock() {
+        super(Material.rock);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setHardness(3.0F).setResistance(5.0F).setStepSound(soundTypeStone).setUnlocalizedName("travisDiamond");
+        this.setHarvestLevel("pickaxe", 1);
+    }
 
-	/**
-	 * Get the Item that this Block should drop when harvested.
-	 * 
-	 * @param fortune
-	 *            the level of the Fortune enchantment on the player's tool
-	 */
-	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Items.diamond;
-	}
+    /**
+     * Get the Item that this Block should drop when harvested.
+     * 
+     * @param fortune
+     *            the level of the Fortune enchantment on the player's tool
+     */
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return Items.diamond;
+    }
 
-	/**
-	 * Returns the quantity of items to drop on block destruction.
-	 */
-	public int quantityDropped(Random random) {
-		return 25;
-	}
+    /**
+     * Returns the quantity of items to drop on block destruction.
+     */
+    public int quantityDropped(Random random) {
+        return 25;
+    }
 
-	/**
-	 * Get the quantity dropped based on the given fortune level
-	 */
-	public int quantityDroppedWithBonus(int fortune, Random random) {
-		return 50;
-	}
+    /**
+     * Get the quantity dropped based on the given fortune level
+     */
+    public int quantityDroppedWithBonus(int fortune, Random random) {
+        return 50;
+    }
 
-	/**
-	 * Spawns this Block's drops into the World as EntityItems.
-	 * 
-	 * @param chance
-	 *            The chance that each Item is actually spawned (1.0 = always,
-	 *            0.0 = never)
-	 * @param fortune
-	 *            The player's fortune level
-	 */
-	public void dropBlockAsItemWithChance(
-			World worldIn,
-			BlockPos pos,
-			IBlockState state,
-			float chance, 
-			int fortune
-	) {
-		super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
-	}
+    /**
+     * Spawns this Block's drops into the World as EntityItems.
+     * 
+     * @param chance
+     *            The chance that each Item is actually spawned (1.0 = always,
+     *            0.0 = never)
+     * @param fortune
+     *            The player's fortune level
+     */
+    public void dropBlockAsItemWithChance(
+            World worldIn,
+            BlockPos pos,
+            IBlockState state,
+            float chance, 
+            int fortune
+    ) {
+        super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
+    }
 
-	@Override
-	public int getExpDrop(IBlockAccess world, BlockPos pos, int fortune) {
-		return 20;
-	}
+    @Override
+    public int getExpDrop(IBlockAccess world, BlockPos pos, int fortune) {
+        return 20;
+    }
 
-	public int getDamageValue(World worldIn, BlockPos pos) {
-		return 0;
-	}
+    public int getDamageValue(World worldIn, BlockPos pos) {
+        return 0;
+    }
 
-	/**
-	 * Get the damage value that this Block should drop
-	 */
-	public int damageDropped(IBlockState state) {
-		return 0;
-	}
+    /**
+     * Get the damage value that this Block should drop
+     */
+    public int damageDropped(IBlockState state) {
+        return 0;
+    }
 }
