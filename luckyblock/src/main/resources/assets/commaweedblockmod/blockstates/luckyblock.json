@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "commaweedblockmod:luckyblock" },
+            { "model": "commaweedblockmod:luckyblock", "y": 90 },
+            { "model": "commaweedblockmod:luckyblock", "y": 180 },
+            { "model": "commaweedblockmod:luckyblock", "y": 270 }
+        ]
+    }
+}

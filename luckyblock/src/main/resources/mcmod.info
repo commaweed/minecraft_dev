@@ -1,0 +1,31 @@
+[
+    {
+        "modid": "examplemod",
+        "name": "Example Mod",
+        "description": "Example placeholder mod.",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["ExampleDude"],
+        "credits": "The Forge and FML guys, for making this example",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    },
+    
+    {
+        "modid": "commaweedblockmod",
+        "name": "Commaweed Block Mod",
+        "description": "Places random blocks in the world, to include a lucky block, diamonds that spawn above Y=16, and a jubbley block for little Kate.",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["Commaweed"],
+        "credits": "My children!!!",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    },
+]

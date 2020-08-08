@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "commaweedblockmod:xdiamondoreblock" },
+            { "model": "commaweedblockmod:xdiamondoreblock", "y": 90 },
+            { "model": "commaweedblockmod:xdiamondoreblock", "y": 180 },
+            { "model": "commaweedblockmod:xdiamondoreblock", "y": 270 }
+        ]
+    }
+}
